@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="js/javascript.js"></script>
 	<title>Home - Full stack</title>
 </head>
 
@@ -12,8 +13,8 @@
 	<div class="fundo">
 		<div class="cabecalho">
 			<div class="linha">
-				<button type="button" class="btn1"><i class="fa fa-user-o fa-2x"></i></button>
-				<button type="button" class="btn2"><i class="fa fa-shopping-cart fa-2x"></i></button>
+				<a href="#" onclick="toggle()" class="lg"><i class="fa fa-user-o fa-2x"></i></a>
+				<a href="#" class="btn2" id=""><i class="fa fa-shopping-cart fa-2x"></i></a>
 			</div>
 			<nav>
 				<div class="menu">
@@ -29,16 +30,22 @@
 		</div>
 		<section>
 			<div id="banner">
-				<h1><small>BEM VINDO AO SITE!</small></h1>
-				<h2>Aproveite nossas ofertas!</h2>
 			</div>
 			<div class="menu-acao">
 				<a href="loja.html">Clique aqui!</a>
 			</div>
+			<div class="popup">
+				<div class="popup-content">
+					<a href="#" onclick="closed()"><i class="fa fa-times-circle-o" id="close"></i></a>
+					<input type="text" placeholder="Usuário">
+					<input type="text" placeholder="Senha">
+					<a href="#" id="entrar">Login</a>
+				</div>
+			</div>
 		</section>
 		<footer>
 			<div class="rodape">
-				<p>Todos direitos reservados. Projeto Recode<<!----><span style="color: #ff5a00;">Pro</span>></p>
+				<p>Todos direitos reservados. Projeto Recode&lt;<small id="pro">Pro</small>&gt;</p>
 			</div>
 		</footer>
 
