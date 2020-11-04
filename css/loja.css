@@ -1,11 +1,14 @@
-html, body, h1, h2, section, small{
+*{
     border: 0;
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.fundo {
+
+header {
     width: 100%;
-    position: relative;
+    height: 200px;
+    background-color: #5a3795;
 }
 
 .linha {
@@ -13,13 +16,8 @@ html, body, h1, h2, section, small{
     height: 40px;
 }
 
-.cabecalho {
-    height: 180px;
-    background-color: #5a3795; 
-}
-
 .menu {
-    width: 50%;
+    width: 100%;
     padding-left: 45%;
     padding-top: 5%;
 }
@@ -46,25 +44,16 @@ html, body, h1, h2, section, small{
     margin-left: 75%;
     border: none;
     background: none;
-    padding-top: 10px;
+    padding-top: 3px;
     color: #fff;
 }
 .btn2 {
     border: none;
     background: none;
-    padding-top: 10px;
+    padding-top: 3px;
     color: #fff;
 }
 
-
-.conteudo {
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 80px;
-    padding-bottom: 300px;
-    background-color: white;
-
-}
 
 .conteudo p {
     text-align: justify;
@@ -102,9 +91,11 @@ html, body, h1, h2, section, small{
 
 .rodape {
     width:100%;
+    margin-top: 30px;
+    height: 280px;
     background-color: black;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    margin-bottom: 0;
 }
 
 .rodape p {
@@ -112,11 +103,21 @@ html, body, h1, h2, section, small{
     text-align: center;
     color: #fff;
     letter-spacing: .2rem;
+    line-height: 50px;
+}
+
+.rodape img {
+    width: 100%;
+    margin-top: 20px;
+}
+#pro {
+  color: #ff5a00;
+  font-size: 18px;
 }
 
 .produtos{
     display: flex;
-    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .produto{
@@ -129,7 +130,7 @@ html, body, h1, h2, section, small{
     padding-top: 10px;
     padding-left: 25%;
     padding-right: 25%;
-    max-width:50%;
+    width:100%;
     cursor: pointer;
     }
 
@@ -156,4 +157,75 @@ html, body, h1, h2, section, small{
     display: block;
     padding: 10px 0;
     font-size: 18px;
+}
+
+.grupo:before, .grupo:after {
+    content: " ";
+    display: table;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #666;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="url"],
+.campo input[type="tel"],
+.campo select,
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #CCC;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #FFC;
+}
+
+.campo label.checkbox {
+    color: #000;
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.botao {
+    font-size: 1.5em;
+    background: #ff5a00;
+    border: 0;
+    margin-bottom: 1em;
+    color: #FFF;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.botao:hover {
+    background: #FB0;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select, label.checkbox {
+    cursor: pointer;
 }
