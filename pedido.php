@@ -1,5 +1,5 @@
 <?php
-		include_once('conexaobd.php');
+		include('conexaobd.php');
 		include_once('header.html');
     ?>	
         <?php
