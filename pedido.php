@@ -12,7 +12,8 @@
         $quantidade = $_POST['quantidade'];
         $valor_total = $_POST['valor_total'];
 
-        $sql = "insert into pedidos (nome_cliente, endereco, telefone, nome_do_produto, valor_produto, quantidade, valor_total) values ('$nome_cliente', '$endereco', '$telefone', '$nome_do_produto', '$valor_produto', '$quantidade', '$valor_total')";
+        $sql = "insert into pedidos (nome_cliente, endereco, telefone, nome_do_produto, valor_produto, quantidade, valor_total)
+        values ('$nome_cliente', '$endereco', '$telefone', '$nome_do_produto', '$valor_produto', '$quantidade', '$valor_total')";
         $result = $conn->query($sql);
       }
      ?>
@@ -21,12 +22,12 @@
             <div class="container">
                 <form action="" method="post">
                     <div class="campo">
-                                <label for="nome">Nome</label>
-                                <input type="text" id="nome" name="nome" style="width: 10em" value="">
+                                <label for="nome_cliente">Nome</label>
+                                <input type="text" id="nome_cliente" name="nome_cliente" style="width: 10em" value="">
                             </div>
                             <div class="campo">
-                            <label for="email">Endereço</label>
-                            <input type="text" id="email" name="email" style="width: 20em" value="">
+                            <label for="endereco">Endereço</label>
+                            <input type="text" id="endereco" name="endereco" style="width: 20em" value="">
                         </div>
                         <div class="campo">
                             <label for="telefone">Telefone</label>
