@@ -66,7 +66,7 @@ include_once("menu.html");
 									nec. Suspendisse in erat rhoncus, varius ipsum quis, scelerisque erat.</p>
 						</div>
 						<div class="col-md-6 text-center my-5 d-none d-lg-block">
-						<img src="missao.png" width="200px">
+						<img src="images/missao.png" width="200px">
 						</div>
 				</div>
 
@@ -75,7 +75,7 @@ include_once("menu.html");
         <div>
             <div class="row my-5">
                 <div class="col-md-6 text-center mt-5 pt-5 d-none d-lg-block">
-				<img src="visao.png" class="img-flui" width="200px">
+				<img src="images/visao.png" class="img-flui" width="200px">
                 </div>
                 <div class="col my-5">
 				<h3 class="text-center mb-4">Visão</h2>
@@ -106,7 +106,7 @@ include_once("menu.html");
 									sollicitudin.</p>
 						</div>
 						<div class="col text-center my-5 d-none d-lg-block">
-					<img src="valores.png" width="200px">
+					<img src="images/valores.png" width="200px">
 						</div>
 				</div>
 			</div>
