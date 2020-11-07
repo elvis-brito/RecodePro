@@ -11,6 +11,7 @@ html, body, h1, h2, section, small{
 .linha {
     background-color: black;
     height: 40px;
+    margin-top: 2px;
 }
 
 .cabecalho {
@@ -48,12 +49,14 @@ html, body, h1, h2, section, small{
     background: none;
     padding-top: 10px;
     color: #fff;
+    outline: 0;
 }
 .btn2 {
     border: none;
     background: none;
-    padding-top: 10px;
+    padding-top: 5px;
     color: #fff;
+    outline: 0;
 }
 
 
@@ -65,15 +68,6 @@ html, body, h1, h2, section, small{
     padding-bottom: 50px;
     z-index: 2;
 
-}
-
-#company {
-    position: absolute;
-    margin-left: 75%;
-    margin-top: 180px;
-   width: 100px;
-   height: 100px;
-   z-index: -1;
 }
 
 .conteudo p {

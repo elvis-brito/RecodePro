@@ -3,31 +3,25 @@
 
 <head>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/sobre.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
-	<title>Sobre - Full stack</title>
+	<title>Loja - Full stack</title>
 </head>
+<div class="linha">
+	<div class="container">
+				<button type="button" class="btn1"><i class="fa fa-user-o fa-2x"></i></button>
+				<button type="button" class="btn2"><i class="fa fa-shopping-cart fa-2x"></i></button>
+</div>
+
+			</div>
+<?php
+include_once ("menu.html");
+?>
 
 <body>
 	<div class="fundo">
-		<div class="cabecalho">
-			<img id="company" src="./our-company.png">
-			<div class="linha">
-				<button type="button" class="btn1"><i class="fa fa-user-o fa-2x"></i></button>
-				<button type="button" class="btn2"><i class="fa fa-shopping-cart fa-2x"></i></button>
-			</div>
-			<nav>
-				<div class="menu">
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="contato.html">Contato</a></li>
-						<li><a href="loja.html">Loja</a></li>
-					</ul>
-
-				</div>
-			</nav>
-		</div>
 			<div class="conteudo">
 				<section>
 				<h1 id="titulo">Nossa empresa</h1>

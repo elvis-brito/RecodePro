@@ -1,6 +1,7 @@
 	<?php
 		include_once('conexaobd.php');
 		include_once('header.html');
+		include_once('menu.html');
     ?>	
 			<section class="produtos">
 				<div class="container">
