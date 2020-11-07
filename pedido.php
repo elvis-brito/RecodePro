@@ -1,6 +1,7 @@
 <?php
 		include('conexaobd.php');
-		include_once('header.html');
+        include_once('header.html');
+        include_once('menu.html');
     ?>	
         <?php
         if(isset($_POST['nome_cliente'])){
@@ -17,39 +18,47 @@
         $result = $conn->query($sql);
       }
      ?>
-            <h1>Faça seu Pedido</h1> <br> <br>
+            
             <section>
-            <div class="container">
+            <div class="container my-5">
+            <h1>Faça seu Pedido</h1> <br> <br>
                 <form action="" method="post">
-                    <div class="campo">
+                <div class="border border-info p-4 rounded">
+                    <div class="form-group">
                                 <label for="nome_cliente">Nome</label>
-                                <input type="text" id="nome_cliente" name="nome_cliente" style="width: 10em" value="">
+                                <input type="text" id="nome_cliente" name="nome_cliente" value="" class="form-control">
                             </div>
                             <div class="campo">
                             <label for="endereco">Endereço</label>
-                            <input type="text" id="endereco" name="endereco" style="width: 20em" value="">
+                            <input type="text" id="endereco" name="endereco" value="" class="form-control">
                         </div>
-                        <div class="campo">
+                        <div class="form-group">
                             <label for="telefone">Telefone</label>
-                            <input type="text" id="telefone" name="telefone" style="width: 10em" value="">
+                            <input type="text" id="telefone" name="telefone" value="" class="form-control">
                         </div>
-                        <div class="campo">
+                        </div>
+                      <div class="row"></div>
+                        <div class="border border-info p-4 rounded my-2">
+                        <div class="form-group">
                         <label for="nome_do_produto">Produto</label>
-                        <input type="text" id="nome_do_produto" name="nome_do_produto" class="input" required />
+                        <input type="text" id="nome_do_produto" name="nome_do_produto" required class="form-control" />
                         </div>
-                        <div class="campo">
+                        <div class="form-group">
                         <label for="valor_produto">Valor do Produto</label>
-                        <input type="text" id="valor_produto" name="valor_produto" class="input" required />
+                        <input type="text" id="valor_produto" name="valor_produto" required  class="form-control"/>
                         </div>
-                        <div class="campo">
+                        <div class="form-group">
                         <label for="quantidade">Quantidade</label>
-                        <input type="number" id="quantidade" name="quantidade" class="input" required />
+                        <input type="number" id="quantidade" name="quantidade" required class="form-control" />
                         </div>
-                        <div class="campo">
+                        <div class="form-group">
                         <label for="valor_total">Valor Total</label>
-                        <input type="text" id="valor_total" name="valor_total" class="input" required />
+                          <input type="text" id="valor_total" name="valor_total" required class="form-control" />
                         </div>
-                        <button class= "botao" type="submit" name="submit">Enviar</button>
+                </div> 
+                <div class="my-5">
+                <button class= "botao"  type="submit" name="submit">Enviar</button> 
+                </div>                       
                 </form>
     </div>
             </section>

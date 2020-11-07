@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="inicial">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.php">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="loja.php">Loja</a></li>
                         <li class="nav-item"><a class="nav-link" href="pedido.php">Pedidos</a></li> 
                     </ul>
