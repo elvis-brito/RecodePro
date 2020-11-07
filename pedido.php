@@ -1,8 +1,18 @@
 <?php
-		include('conexaobd.php');
-        include_once('header.html');
-        include_once('menu.html');
-    ?>	
+		include_once('conexaobd.php');
+		include_once('header.html');
+		?>	
+		<div class="cabecalho">
+			<div class="linha">
+				<div class="container">
+					<a href="#" onclick="toggle()" class="lg"><i class="fa fa-user-o fa-2x"></i></a>
+					<a href="#" class="btn2" id=""><i class="fa fa-shopping-cart fa-2x"></i></a>
+				</div>
+			</div>
+		</div>
+<?php
+		include_once('menu.html');
+		?>	
         <?php
         if(isset($_POST['nome_cliente'])){
         $nome_cliente = $_POST['nome_cliente'];
