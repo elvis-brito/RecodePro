@@ -6,13 +6,13 @@ function BaseMenu(props){
     const { location } = props
 
     return (
-        <Navbar className="navbar-dark" bg="primary" expand="lg" fixed="top">
+        <Navbar className="navbar-custom" bg="primary" expand="lg" fixed="top">
             <Navbar.Brand>
                 FullStackEletro React
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="item-menu" />
             <Navbar.Collapse id="item-menu">
-                <Nav activeKey={location.pathname} className="ml-auto-mr-3">
+                <Nav activeKey={location.pathname} className="ml-auto mr-5">
                   <Nav.Item>
                   <Nav.Link as={Link} href="/" to="/">Inicio</Nav.Link>
                   </Nav.Item>

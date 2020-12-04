@@ -1,5 +1,12 @@
-export default function Pedidos (){
-    return(
-        <h1>Página de Pedidos</h1>
+import { Container, Row } from 'react-bootstrap'
+import Pedido from '../Components/Pedido'
+
+export default function Pedidos() {
+    return (   
+        <Container fluid>
+            <Row>
+                <Pedido />
+            </Row>
+        </Container>
     )
 }

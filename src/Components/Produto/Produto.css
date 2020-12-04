@@ -1,5 +1,5 @@
 figure{
-    width: 31%;
+    width: 350px;
     margin-right: 1%;
     border: 1px solid black;
 }
@@ -28,11 +28,16 @@ figure h1 {
 
 figure a {
     margin-top: 10px;
-    text-decoration: none;
     text-align: center;
     color: white;
     background-color: #5a3795;
     display: block;
     padding: 10px 0;
     font-size: 18px;
+    text-decoration: none;
 }
+
+figure a:hover{
+    color: white;
+    text-decoration: none;
+  }
