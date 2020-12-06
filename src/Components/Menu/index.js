@@ -6,7 +6,7 @@ function BaseMenu(props){
     const { location } = props
 
     return (
-        <Navbar className="navbar-custom" bg="primary" expand="lg" fixed="top">
+        <Navbar className="navbar-custom" expand="lg" fixed="top">
             <Navbar.Brand>
                 FullStackEletro React
             </Navbar.Brand>

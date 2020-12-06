@@ -7,6 +7,23 @@
     border-bottom: 2px solid rgba(255, 255, 245, 0.9);
 }
 
-Navbar .navbar-custom {
+.navbar-custom {
     background-color: #5a3795;
+}
+
+#item-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#item-menu .active {
+    border-bottom: none;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    pointer-events: none;
+}
+
+.navbar-light .navbar-brand {
+    color: white!important;
 }

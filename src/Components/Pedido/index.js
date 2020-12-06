@@ -9,7 +9,7 @@ export default function Produto() {
         const url = 'http://localhost/recode/back-end/api/pedidos-guarda.php';
 
         fetch(url, {
-            method: "POST",
+            method: "POST", 
             body: formData
         }).then((response) => console.log(response.json())).then((dados) => {
 
