@@ -18,6 +18,8 @@
 
 #item-menu .active {
     border-bottom: none;
+    color: rgb(232, 248, 7);
+    font-weight: bold;
 }
 
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {

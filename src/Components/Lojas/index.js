@@ -4,7 +4,7 @@ import Rgdn from './img/rio-grande-sul.jpg'
 import './Lojas.css';
 
 
-export default function Sobrenos(props) {
+export default function Lojas(props) {
     return (
         <section class="container">
             <div class="row">

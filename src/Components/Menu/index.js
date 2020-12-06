@@ -17,16 +17,16 @@ function BaseMenu(props){
                   <Nav.Link as={Link} href="/" to="/">Inicio</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                  <Nav.Link as={Link} href="/produtos" to="/produtos">Produtos</Nav.Link>
+                  <Nav.Link as={Link} href="/sobre" to="/sobre">Sobre</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                  <Nav.Link as={Link} href="/contato" to="/contato">Contato</Nav.Link>
+                  <Nav.Link as={Link} href="/produtos" to="/produtos">Produtos</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
                   <Nav.Link as={Link} href="/pedidos" to="/pedidos">Pedidos</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                  <Nav.Link as={Link} href="/lojas" to="/lojas">Nossas Lojas</Nav.Link>
+                  <Nav.Link as={Link} href="/lojas" to="/lojas">Lojas</Nav.Link>
                   </Nav.Item>
                 </Nav>
             </Navbar.Collapse>

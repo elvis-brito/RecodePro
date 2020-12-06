@@ -1,7 +1,24 @@
 import { Form, Button } from 'react-bootstrap';
 import './Pedido.css';
+import { useHistory } from 'react-router-dom';
 
 export default function Produto() {
+
+    const history = useHistory();
+
+    function calcular(){
+        let n1 = document.getElementById('valor_produto').value
+        let n2 = document.getElementById('quantidade').value
+        let total = 0
+
+        if(n1 == '' || n2 == ''){
+            n1 = 0
+            n2 = 0
+        }
+
+        total = parseFloat(n1)*parseFloat(n2);
+        document.getElementById('valor_total').value = total;
+    } 
     async function registrarPedido(evento) {
         evento.preventDefault();
 
@@ -15,8 +32,9 @@ export default function Produto() {
 
             console.log("euu", "dados");
         });
+        alert("Recebemos seu pedido! Obrigado por comprar conosco!")
+        history.push("/");
     }
-
     return (
         <div className="mx-auto col-lg-8">
             <Form id="formReset" onSubmit={registrarPedido}>
@@ -42,11 +60,11 @@ export default function Produto() {
                     </div>
                     <div class="form-group">
                         <label for="valor_produto">Valor do Produto</label>
-                        <input type="text" id="valor_produto" name="valor_produto" required class="form-control" />
+                        <input type="text" id="valor_produto" onChange={calcular} name="valor_produto" required class="form-control" />
                     </div>
                     <div class="form-group">
                         <label for="quantidade">Quantidade</label>
-                        <input type="number" id="quantidade" name="quantidade" required class="form-control" />
+                        <input type="number" id="quantidade" name="quantidade" onChange={calcular} required class="form-control" />
                     </div>
                     <div class="form-group">
                         <label for="valor_total">Valor Total</label>
