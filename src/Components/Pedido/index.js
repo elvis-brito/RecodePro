@@ -11,7 +11,7 @@ export default function Produto() {
         let n2 = document.getElementById('quantidade').value
         let total = 0
 
-        if(n1 == '' || n2 == ''){
+        if(n1 === '' || n2 === ''){
             n1 = 0
             n2 = 0
         }
@@ -32,7 +32,8 @@ export default function Produto() {
 
             console.log("euu", "dados");
         });
-        alert("Recebemos seu pedido! Obrigado por comprar conosco!")
+        var nome = document.getElementById('nome_cliente').value
+        alert(nome + ", recebemos seu pedido! Obrigado por comprar conosco!")
         history.push("/");
     }
     return (
@@ -68,7 +69,7 @@ export default function Produto() {
                     </div>
                     <div class="form-group">
                         <label for="valor_total">Valor Total</label>
-                        <input type="text" id="valor_total" name="valor_total" required class="form-control" />
+                        <input type="text" id="valor_total" name="valor_total" readOnly class="form-control" />
                     </div>
                 </div>
                 <Button variant="primary" type="submit">
