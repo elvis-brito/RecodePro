@@ -23,7 +23,7 @@ export default function Produto() {
         evento.preventDefault();
 
         let formData = new FormData(evento.target);
-        const url = 'http://13.66.58.210/recodepro/back-end/api/pedidos-guarda.php';
+        const url = 'http://webservicejedi.ddns.net/back-end/api/pedidos-guarda.php';
 
         fetch(url, {
             method: "POST", 
