@@ -6,7 +6,8 @@ export default function Produtos (){
     const [produtos, setProdutos] = useState([]);
 
     useEffect(async () => {
-        const resposta = await fetch ("http://webservicejedi.ddns.net/back-end/api/produto-lista.php");
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
+        const resposta = await fetch (proxyurl + "http://webservicejedi.ddns.net/back-end/api/produto-lista.php");
         const dados = await resposta.json();
         setProdutos(dados);
     }, [])
