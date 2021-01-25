@@ -2,7 +2,7 @@ import { Form, Button } from 'react-bootstrap';
 import './Pedido.css';
 import { useHistory } from 'react-router-dom';
 
-export default function Produto() {
+export default function Pedido() {
 
     const history = useHistory();
 
@@ -22,15 +22,13 @@ export default function Produto() {
     async function registrarPedido(evento) {
         evento.preventDefault();
 
-        let formData = new FormData(evento.target);
+        const formData = new FormData(evento.target);
         const url = 'http://localhost:5000/registrar-pedido';
 
-        fetch(url, {
-            method: "POST", 
-            body: formData
-        }).then((response) => console.log(response.json())).then((dados) => {
-
-            console.log("euu", "dados");
+       await fetch(url, {
+            body: JSON.stringify(Object.fromEntries(formData)), 
+            method: 'POST', 
+            headers: new Headers({'content-type': 'application/json'})
         });
         var nome = document.getElementById('nome_cliente').value
         alert(nome + ", recebemos seu pedido! Obrigado por comprar conosco!")
@@ -42,33 +40,33 @@ export default function Produto() {
                 <h4>Fazer Pedidos</h4>
                 <div class="border border-info p-4 rounded">
                     <div class="form-group">
-                        <label for="nome_cliente">Nome</label>
+                        <label htmlFor="nome_cliente">Nome</label>
                         <input type="text" id="nome_cliente" name="nome_cliente" class="form-control" />
                     </div>
                     <div class="campo">
-                        <label for="endereco">Endereço</label>
+                        <label htmlFor="endereco">Endereço</label>
                         <input type="text" id="endereco" name="endereco" class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="telefone">Telefone</label>
+                        <label htmlFor="telefone">Telefone</label>
                         <input type="text" id="telefone" name="telefone" class="form-control" />
                     </div>
                 </div>
                 <div class="border border-info p-4 rounded my-2" >
                     <div class="form-group">
-                        <label for="nome_do_produto">Produto</label>
+                        <label htmlFor="nome_do_produto">Produto</label>
                         <input type="text" id="nome_do_produto" name="nome_do_produto" required class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="valor_produto">Valor do Produto</label>
+                        <label htmlFor="valor_produto">Valor do Produto</label>
                         <input type="text" id="valor_produto" onChange={calcular} name="valor_produto" required class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="quantidade">Quantidade</label>
+                        <label htmlFor="quantidade">Quantidade</label>
                         <input type="number" id="quantidade" name="quantidade" onChange={calcular} required class="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="valor_total">Valor Total</label>
+                        <label htmlFor="valor_total">Valor Total</label>
                         <input type="text" id="valor_total" name="valor_total" readOnly class="form-control" />
                     </div>
                 </div>
