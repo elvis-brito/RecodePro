@@ -35,7 +35,7 @@ export default function Pedido() {
         history.push("/");
     }
     return (
-        <div className="mx-auto col-lg-">
+        <div className="mx-auto col-lg-8">
             <Form id="formReset" onSubmit={registrarPedido}>
                 <h4>Fazer Pedidos</h4>
                 <div class="border border-info p-4 rounded">
