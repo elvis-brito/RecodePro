@@ -1,7 +1,7 @@
 const express = require('express')
-const bodyParser = require('body-parser')
-
 const app = express();
+const connect = require("../bd/connection");
+const bodyParser = require('body-parser')
 
 app.use(bodyParser.json({extended: true}))
 
@@ -10,15 +10,8 @@ const cors = require('cors')
 app.use(cors())
 
 app.get("/produtos", (req, res, next) => {
-    const mysql = require('mysql')
-    const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: '',
-        database: 'mydb'
-    });
-
-    connection.query("select * from produtos", (erro, result) => {
+    
+    connect.query("select * from produtos", (erro, result) => {
         res.json(result)
     })
 });
@@ -38,15 +31,7 @@ app.post("/registrar-pedido", (req, res) => {
     
     let sql = "INSERT INTO pedidos (nome_cliente, endereco, telefone, nome_do_produto, valor_produto, quantidade, valor_total) VALUES (?, ?, ?, ?, ?, ?, ?)"
 
-    const mysql = require('mysql')
-    const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: '',
-        database: 'mydb'
-    });
-
-    connection.query(sql, values, (error, result) => {
+    connect.query(sql, values, (error, result) => {
         if (error) {
             console.log('Erro ' + error)
         } else {
@@ -55,8 +40,4 @@ app.post("/registrar-pedido", (req, res) => {
     })
 });
 
-
-app.listen(5000, () => {
-    console.log("Servidor ativo!");
-});
-
+module.exports = app
