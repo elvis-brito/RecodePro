@@ -1,0 +1,36 @@
+.counter {
+    display: block;
+    margin: 50px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #333;
+    position: relative;
+    margin: 100px auto;
+}
+
+.counter h2 {
+   text-align: center;
+   padding: 20px 0px 10px;
+}
+
+ .counter > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    }
+
+    .counter button:nth-child(1) {
+        padding: 5px 10px;
+    } 
+
+
+    .counter button:nth-child(3) {
+        padding: 5px 7px;
+    } 
+
+    .count {
+        font-size: 22px;
+        font-weight: bold;
+    }
