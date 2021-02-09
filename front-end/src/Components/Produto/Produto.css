@@ -1,0 +1,43 @@
+figure{
+    width: 350px;
+    margin-right: 1%;
+    border: 1px solid black;
+}
+
+figure img {
+    padding-top: 10px;
+    padding-left: 25%;
+    padding-right: 25%;
+    width:100%;
+    cursor: pointer;
+    }
+
+figure p{
+    margin: 0;
+    text-align: center;
+    size: 10px;
+    padding: 5px;
+}
+
+figure h1 {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+figure a {
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    background-color: #5a3795;
+    display: block;
+    padding: 10px 0;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+figure a:hover{
+    color: white;
+    text-decoration: none;
+  }
