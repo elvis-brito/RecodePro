@@ -1,0 +1,2 @@
+(this.webpackJsonprecodepro=this.webpackJsonprecodepro||[]).push([[5],{82:function(e,o,r){"use strict";r.r(o);var s=r(5),c=(r(35),r(1));var t=Object(s.g)((function(e){return e.location,Object(c.jsx)("div",{class:"rodape",children:Object(c.jsxs)("p",{children:["Todos direitos reservados. Projeto Recode<",Object(c.jsx)("small",{id:"pro",children:"Pro"}),">"]})})}));o.default=t}}]);
+//# sourceMappingURL=5.5708161e.chunk.js.map
