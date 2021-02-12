@@ -1,5 +1,12 @@
-var app = require('./config/server');
+const express = require("express");
+const app=express();
+const cors=require('cors'); 
+const routes = require('./rotas');
 
-app.listen(5000, () => {
-    console.log("Servidor ativo!");
-});
+
+app.use(express.json());
+app.use(cors())
+
+app.use(routes);
+
+app.listen(5000);

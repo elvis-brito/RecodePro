@@ -4,6 +4,7 @@ import  Pedidos from './Pages/Pedidos'
 import  Lojas from './Pages/Lojas'
 import Home from './Pages/Home'
 import Sobre from './Pages/Sobre'
+import Contato from './Pages/Contato'
 
 function Rotas () {
     return (
@@ -13,6 +14,7 @@ function Rotas () {
             <Route exact path="/pedidos" component={ Pedidos } />
             <Route exact path="/produtos" component={ Produtos } />
             <Route exact path="/lojas" component={ Lojas } />
+            <Route exact path="/contato" component={ Contato } />
         </Switch>
     )
 }

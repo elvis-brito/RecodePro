@@ -1,9 +1,13 @@
-const mysql = require('mysql')
-const connect = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        password: '',
-        database: 'mydb'
-    })
+const mongoose = require('mongoose');
 
-module.exports = connect
+function connect() {
+    mongoose
+        .connect('mongodb://localhost/fullstack', {useNewUrlParser: true, useUnifiedTopology: true})
+        .then(() => {
+            console.log('Conectado ao db')
+        }).catch((error) => {
+            console.log(`Não conectado ${error}`)
+        })
+}
+
+module.exports = connect();
