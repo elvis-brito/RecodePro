@@ -22,6 +22,10 @@
     font-weight: bold;
 }
 
+.navbar-toggler:focus, .navbar-toggler:hover {
+    outline: none;
+}
+
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     pointer-events: none;
 }

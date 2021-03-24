@@ -1,9 +1,8 @@
 .banner {
-    
     background-image: url('./img/banner.png');
+    min-height: calc(100vh - 105px);
+    background-position: center;
     background-size: cover;
     width: 100vw;
-    margin-left: calc(50% - 50vw);
-    height: 110vh;
-    margin-block-start: -80px;
+    height: 100%;
 }

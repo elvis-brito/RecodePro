@@ -8,7 +8,7 @@ export default function Produto(props) {
 			<h1>{props.nome}</h1>
 			<p><strong>150</strong> pçs</p>
 			<p>Valor: <span>{props.valor}</span></p>
-			<a href="#">Adicionar ao carrinho</a>
+			<a href={require(`${props.imagem}`)}>Adicionar ao carrinho</a>
 		</figure>
 	)
 }

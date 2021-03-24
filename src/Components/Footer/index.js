@@ -1,13 +1,10 @@
-import { Navbar, Nav } from 'react-bootstrap';
-import { Link, withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import './Footer.css'
 
-function BaseFooter(props) {
-    const { location } = props
-
+function BaseFooter() {
     return (
-        <div class="rodape">
-            <p>Todos direitos reservados. Projeto Recode&lt;<small id="pro">Pro</small>&gt;</p>
+        <div className="rodape">
+            <p>Todos direitos reservados. Projeto Recode&lt;<span id="pro">Pro</span>&gt;</p>
         </div>
     )
 }
